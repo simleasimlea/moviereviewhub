@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<a href="{{ url_for('main.add') }}">Add New Review</a>
+<ul>
+    {% for movie in movies %}
+    <li><strong>{{ movie.title }}</strong> by {{ movie.director }}<br>{{ movie.review }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}

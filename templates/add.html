@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post">
+    Title: <input type="text" name="title"><br>
+    Director: <input type="text" name="director"><br>
+    Review: <textarea name="review"></textarea><br>
+    <input type="submit" value="Add Review">
+</form>
+{% endblock %}
