@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+env/
+.venv/
+ENV/
+
+# Flask instance folder
+instance/
+
+# Pytest cache
+.pytest_cache/
+
+# MySQL database dumps or credentials
+*.sql
+*.db
+
+# VSCode settings (optional)
+.vscode/
+
+# Mac OS and Windows system files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
