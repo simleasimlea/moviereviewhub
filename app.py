@@ -13,6 +13,8 @@ db.init_app(app)
 
 with app.app_context():
     db.create_all()
+    print("Database created at:", app.config['SQLALCHEMY_DATABASE_URI'])
+
 
 app.register_blueprint(main)
 

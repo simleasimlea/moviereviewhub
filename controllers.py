@@ -10,14 +10,19 @@ def index():
 
 @main.route('/add', methods=['GET', 'POST'])
 def add():
+    print("Request method is:", request.method)
     if request.method == 'POST':
+
         new_movie = Movie(
             title=request.form['title'],
             director=request.form['director'],
             review=request.form['review']
         )
         db.session.add(new_movie)
-        db.session.commit()  # 🔥 THIS MUST BE PRESENT
+        db.session.commit()
         return redirect(url_for('main.index'))
     return render_template('add.html')
+
+
+
 
