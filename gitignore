@@ -17,7 +17,7 @@ instance/
 
 # MySQL database dumps or credentials
 *.sql
-*.db
+app.db
 
 # VSCode settings (optional)
 .vscode/

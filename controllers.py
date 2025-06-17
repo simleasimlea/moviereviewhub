@@ -17,6 +17,7 @@ def add():
             review=request.form['review']
         )
         db.session.add(new_movie)
-        db.session.commit()
+        db.session.commit()  # 🔥 THIS MUST BE PRESENT
         return redirect(url_for('main.index'))
     return render_template('add.html')
+
